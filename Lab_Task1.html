@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+<body>
+	<h1>Registration form</h1>
+	<hr>
+	<br>
+
+	<!-- HTML form -->
+	
+	<form>
+
+ <fieldset>
+  <legend>Basic Information:</legend>
+		<!-- Input Text Field -->
+		<label for="myname">Enter your name</label>
+		<input type="text" name="myname" id="myname">
+
+		<br>
+
+		<br>
+
+		<!-- Radio -->
+		<label for="Gender">Gender</label>
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+
+		<input type="radio" name="gender" id="female" value="female">
+
+		<label for="female">Female</label>
+
+		<br>
+		<br>
+
+		<!--date-->
+		<label for="dob">DoB: </label>
+
+<input type="date" id="dob" name="dateOfBirth"
+       value="2021-02-15"
+       min="1980-01-01" max="2025-12-31">
+
+       <br>
+       <br>
+
+		<!-- Dropdown/Select -->
+		<label for="religion">Religion:  </label>
+		<select id="religion" name="yourreligion">
+			<option value="islam">Islam</option>
+			<option value="hindu">Hindu</option>
+			<option value="christian">Christian</option>
+			<option value="other">Other</option>
+		</select>
+
+		<br>
+        <br>
+        	<!-- Input Text Field -->
+		<label for="fathername">Father's Name:</label>
+		<input type="text" name="fathername" id="fathername">
+
+		<br>
+		<br>
+
+		 	<!-- Input Text Field -->
+		<label for="mothername">Mother's Name:</label>
+		<input type="text" name="mothername" id="mothername">
+        <br>
+		<br>
+        </fieldset>
+
+        <fieldset>
+		<legend>Contact Information </legend>
+		<label for="paddress">Present Address: </label>
+		<input type="text" name="paddress" id="paddress">
+
+		<br>
+		<br>
+		<label for="permaddress">Permanent Address: </label>
+		<input type="text" name="permaddress" id="permaddress">
+
+		<br>
+		<br>
+			<!--Phone/tel -->
+		<label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+880-1234-456789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+          <!--Email/email-->
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email">
+		<br>
+		<br>
+
+		<!--Personal Link-->
+		<label for="perslink">Personal Website link :</label>
+        <input type="url" id="perslink" name="perslink">
+        <br>
+        </fieldset>
+        
+        <fieldset>
+		<legend>Academic Information </legend>
+
+		<!--Number-->
+
+		<label for="ssc">SSC Year:</label>
+        <input type="number" id="ssc" name="ssc">
+
+        <label for="sscin">SSC Institution:</label>
+        <input type="text" id="sscin" name="sscin">
+        <br>
+
+        <label for="hsc">HSC Year:</label>
+        <input type="number" id="hsc" name="hsc">
+
+        <label for="sscin">HSC Institution:</label>
+        <input type="text" id="hscin" name="hscin">
+        <br>
+        </fieldset>
+
+        <br>
+
+		<!-- Input submit -->
+		<input type="submit" value="Submit">
+
+		
+	</form>
+
+
+		
+
+</body>
+</html>
